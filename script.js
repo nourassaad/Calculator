@@ -93,7 +93,14 @@ function cleanOutput(output) {
 
     if(decimal) {
         if(decimal.length > 5) {
-            decimal = decimal.slice(0, 5);
+            let temp = decimal.slice(0, 5);
+            if(decimal.includes("e")) {
+                decimal = temp + "e" + decimal.split("e")[1];
+            }
+            else {
+                decimal = temp;
+            }
+            
         }
         output_array.push(".");
         output_array.push(decimal);
