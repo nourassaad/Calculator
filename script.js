@@ -94,7 +94,6 @@ function cleanOutput(output) {
     if(decimal) {
         if(decimal.length > 5) {
             decimal = decimal.slice(0, 5);
-            console.log(decimal.length);
         }
         output_array.push(".");
         output_array.push(decimal);
