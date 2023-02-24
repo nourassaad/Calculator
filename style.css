@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    -webkit-tap-highlight-color: transparent;
 }
 
 .app {
@@ -79,6 +78,7 @@
     border-radius: 1rem;
     transition: 0.2s;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .keys .key span {
