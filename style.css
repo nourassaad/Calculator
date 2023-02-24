@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .app {
@@ -66,7 +67,6 @@
     grid-template-rows: repeat(5, 1fr);
     grid-gap: 1rem;
     box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.2);
-    user-select: none;
 }
 
 .keys .key {
